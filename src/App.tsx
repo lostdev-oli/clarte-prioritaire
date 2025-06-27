@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+
 
 /**
  * Root component of the application.
@@ -9,8 +9,13 @@ export function App(): JSX.Element {
   return (
     <>
       <h1>Clarté Prioritaire</h1>
-      <div className="card">
-        <button onClick={() => setCount((c) => c + 1)}>count is {count}</button>
+      <div className="p-8">
+        <button
+          className="rounded bg-primary px-4 py-2 font-semibold text-white"
+          onClick={() => setCount((c) => c + 1)}
+        >
+          count is {count}
+        </button>
       </div>
     </>
   );
